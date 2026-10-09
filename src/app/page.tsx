@@ -6,10 +6,10 @@ import { StickyFooter } from "@/components/funnel/sticky-footer";
 import { BeforeAfter } from "@/components/sections/before-after";
 import { Bonuses } from "@/components/sections/bonuses";
 import { Curriculum } from "@/components/sections/curriculum";
-import { Ecosystem } from "@/components/sections/ecosystem";
 import { Faq } from "@/components/sections/faq";
 import { FinalCta } from "@/components/sections/final-cta";
 import { Framework } from "@/components/sections/framework";
+import { Gallery } from "@/components/sections/gallery";
 import { Hero } from "@/components/sections/hero";
 import { JobTitles } from "@/components/sections/job-titles";
 import { Mentor } from "@/components/sections/mentor";
@@ -18,7 +18,6 @@ import { Qualify } from "@/components/sections/qualify";
 import { TechTimeline } from "@/components/sections/tech-timeline";
 import { Testimonials } from "@/components/sections/testimonials";
 import { TrustStrip } from "@/components/sections/trust-strip";
-import { WhoFor } from "@/components/sections/who-for";
 
 export default function Page() {
   return (
@@ -33,9 +32,8 @@ export default function Page() {
         <BeforeAfter />
         <Framework />
         <Curriculum />
-        <Ecosystem />
-        <WhoFor />
         <Mentor />
+        <Gallery />
         <Testimonials />
         <Bonuses />
         <Qualify />

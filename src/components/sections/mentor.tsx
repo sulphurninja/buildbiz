@@ -22,7 +22,7 @@ export function Mentor() {
         <Reveal className="mx-auto w-full max-w-sm">
           <div className="relative flex aspect-[4/5] items-end overflow-hidden rounded-3xl border border-gold/30 bg-gradient-to-b from-wine-3 to-wine-deep shadow-deep">
             <Image
-              src="/amit-moga.webp"
+              src="/gallery/amit-portrait.png"
               alt={m.name}
               fill
               sizes="(min-width: 768px) 384px, 90vw"
