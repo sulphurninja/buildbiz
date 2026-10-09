@@ -17,13 +17,13 @@ export function WhoFor() {
         lead="Manufacturer ho ya consultant, retailer ho ya agency owner, doctor ho ya exporter — the trap is the same. A business that depends on the owner."
       />
 
-      <ul className="mx-auto mt-12 max-w-3xl space-y-3">
+      <ul className="mx-auto mt-12 flex max-w-3xl flex-wrap justify-center gap-3">
         {site.whoFor.map((w, i) => (
-          <Reveal as="li" key={w} delay={i * 60} className="flex items-start gap-4 rounded-2xl border border-line bg-wine-2/60 px-5 py-4">
-            <span className="mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full bg-gold text-wine-deep">
-              <Check className="size-3.5" strokeWidth={3} />
+          <Reveal as="li" key={w} delay={i * 60} className="flex items-center gap-3 rounded-full border border-line bg-wine-2/60 px-5 py-3">
+            <span className="flex size-5 shrink-0 items-center justify-center rounded-full bg-gold text-paper">
+              <Check className="size-3" strokeWidth={3} />
             </span>
-            <p className="text-[15.5px] leading-relaxed text-cream/85">{w}</p>
+            <p className="text-[14.5px] font-medium text-cream/90">{w}</p>
           </Reveal>
         ))}
       </ul>
@@ -35,7 +35,7 @@ export function WhoFor() {
           </span>
         ))}
       </Reveal>
-      <p className="mt-4 text-center text-[14px] italic text-cream/55">If it has a team and customers, this works.</p>
+      <p className="mt-5 text-center font-accent text-[1.3rem] italic text-cream/60">If it has a team and customers, this works.</p>
 
       <Reveal className="mt-12">
         <CtaBlock source="who-for">Yes! This is my business — reserve my seat</CtaBlock>

@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Inter } from "next/font/google";
+import { Bricolage_Grotesque, Inter, Instrument_Serif } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner";
 import { site } from "@/content/site";
 import "./globals.css";
@@ -10,11 +10,17 @@ const sans = Inter({
   display: "swap",
 });
 
-const display = Cormorant_Garamond({
+const display = Bricolage_Grotesque({
   variable: "--font-display",
   subsets: ["latin"],
   display: "swap",
-  weight: ["500", "600", "700"],
+});
+
+const accent = Instrument_Serif({
+  variable: "--font-accent",
+  subsets: ["latin"],
+  display: "swap",
+  weight: "400",
   style: ["normal", "italic"],
 });
 
@@ -31,17 +37,17 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#2a1118",
+  themeColor: "#faf6f0",
   width: "device-width",
   initialScale: 1,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en-IN" className={`${sans.variable} ${display.variable} h-full antialiased`}>
+    <html lang="en-IN" className={`${sans.variable} ${display.variable} ${accent.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         {children}
-        <Toaster theme="dark" position="bottom-left" offset={{ bottom: 96, left: 16 }} mobileOffset={{ bottom: 88, left: 12, right: 12 }} visibleToasts={2} />
+        <Toaster theme="light" position="bottom-left" offset={{ bottom: 96, left: 16 }} mobileOffset={{ bottom: 88, left: 12, right: 12 }} visibleToasts={2} />
       </body>
     </html>
   );

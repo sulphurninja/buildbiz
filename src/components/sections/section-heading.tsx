@@ -19,9 +19,9 @@ export function SectionHeading({ eyebrow, title, lead, className }: Props) {
   );
 }
 
-/** Gold italic emphasis inside headings. */
+/** Gold italic serif emphasis inside headings. */
 export function Em({ children, className }: { children: React.ReactNode; className?: string }) {
-  return <em className={cn("font-display italic font-semibold text-gold", className)}>{children}</em>;
+  return <em className={cn("font-accent italic text-gold [font-size:1.06em]", className)}>{children}</em>;
 }
 
 /** Page-width container used by every section. */

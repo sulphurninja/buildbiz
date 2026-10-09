@@ -22,7 +22,7 @@ export function Testimonials() {
             <h3 className="mt-3 font-display text-[1.5rem] font-bold leading-snug text-cream">“{t.headline}”</h3>
             <p className="mt-3 flex-1 text-[15px] leading-relaxed text-cream/65">{t.body}</p>
             <div className="mt-5 flex items-center gap-3 border-t border-line pt-4">
-              <span className="flex size-10 items-center justify-center rounded-full bg-gold font-display text-[15px] font-bold text-wine-deep">
+              <span className="flex size-10 items-center justify-center rounded-full bg-gold font-display text-[15px] font-bold text-paper">
                 {t.name
                   .split(" ")
                   .map((p) => p[0])

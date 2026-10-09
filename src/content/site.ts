@@ -40,9 +40,7 @@ export const site = {
     quote:
       "I never wanted a business that depended on me, a vendor, or a spreadsheet. So I build the system first — then scale the business around it.",
     bio: [
-      "Dr. Amit Moga builds AI-powered operating systems for Indian businesses — the kind that run teams, sales, operations and follow-ups without the owner being pinged for every decision.",
-      "He is the architect behind the BuildBiz methodology — BUILD → AUTOMATE → SYSTEMIZE → SCALE — a framework tested under real operational pressure: real people, real follow-up failures, real sales targets, and real founder overload. No developers. No enterprise software. No vendor lock-in.",
-      "This workshop is not a lecture about better tools. It is that exact architecture, converted into a live build format for owners who want execution, not decoration.",
+      "Architect of the BUILD → AUTOMATE → SYSTEMIZE → SCALE method. He builds AI operating systems that run Indian businesses — teams, sales, ops, follow-ups — without the owner being pinged for every decision. This workshop is that exact architecture, built live with you.",
     ],
     stats: [
       { value: "4-Step", label: "Signature Method" },
@@ -57,52 +55,52 @@ export const site = {
       step: "01",
       name: "BUILD",
       headline: "Build the right business infrastructure.",
-      body: "Most owners bolt tools onto chaos. We start with architecture — the roles, data and decisions your business actually runs on.",
+      body: "Architecture first. Tools later.",
     },
     {
       step: "02",
       name: "AUTOMATE",
       headline: "Eliminate repetitive manual work.",
-      body: "Daily reports, reminders, follow-ups, approvals. Anything that happens twice gets handed to AI — permanently.",
+      body: "Anything that happens twice goes to AI.",
     },
     {
       step: "03",
       name: "SYSTEMIZE",
       headline: "Create repeatable AI-powered processes.",
-      body: "Playbooks your team actually follows. Standards that hold whether you're in the office or in Kerala.",
+      body: "Playbooks that hold — even when you're in Kerala.",
     },
     {
       step: "04",
       name: "SCALE",
       headline: "Grow without proportionally adding people, time and complexity.",
-      body: "Revenue goes up. Headcount, meetings and your working hours don't have to follow.",
+      body: "Revenue up. Your hours don't follow.",
     },
   ],
 
   pains: [
     {
       title: "Aap hi system ho",
-      body: "Nothing moves without you. Every decision, approval and problem routes back to you. You are not the owner. You are the bottleneck.",
+      body: "Every decision routes back to you. You're not the owner — you're the bottleneck.",
     },
     {
       title: "Har subah chasing updates mein nikal jaati hai",
-      body: "Your first 2 hours go on WhatsApp asking the team what happened yesterday. Reports that should arrive automatically, you chase manually.",
+      body: "First 2 hours on WhatsApp asking what happened yesterday.",
     },
     {
       title: "Team tab perform karti hai jab aap dekh rahe ho",
-      body: "Aapki nazar hati, aur quality giri. Your team isn't lazy — there's no system telling them what good looks like, every day, without you.",
+      body: "Nazar hati, quality giri. There's no system — only your eyes.",
     },
     {
       title: "“Thoda follow-up reh gaya” — aur deal nikal gayi",
-      body: "Leads aate hain. Koi time pe follow-up nahi karta. You find out two weeks later that the client went to a competitor.",
+      body: "Nobody followed up. The client went to a competitor.",
     },
     {
       title: "Tools khareede, par kuch nahi chala",
-      body: "Google Sheets. Zoho. Notion. Subscriptions you pay for and nobody opens. The tools were never the problem — the missing system was.",
+      body: "Sheets, Zoho, Notion — paid for, never opened.",
     },
     {
       title: "10 din ki chhutti li toh business ruk jaayega",
-      body: "You can't switch off, sell it, or scale it — because everything depends on one person. That's not a business. That's a job you built for yourself.",
+      body: "Everything depends on one person: you. That's a job, not a business.",
     },
   ],
 
@@ -148,17 +146,17 @@ export const site = {
         {
           n: "1",
           title: "The Business OS Architecture",
-          body: "Why every tool you tried failed — and the design logic that finally works for your business.",
+          body: "Why every tool failed — and the design that works.",
         },
         {
           n: "2",
           title: "HR Command Center",
-          body: "Hiring pipeline, candidate tracker, onboarding and daily HR reporting — built live, running before you close the laptop.",
+          body: "Hiring, onboarding, daily HR reports — running before you log off.",
         },
         {
           n: "3",
           title: "Team Accountability Engine",
-          body: "KPIs, daily reports, performance scoring. Know what everyone did today — without asking a single person.",
+          body: "Know what everyone did today — without asking anyone.",
         },
       ],
     },
@@ -170,17 +168,17 @@ export const site = {
         {
           n: "4",
           title: "Sales Pipeline & Follow-Up System",
-          body: "No lead ever slips. Know your pipeline health at any moment — without it living in your head.",
+          body: "No lead ever slips. Pipeline out of your head, into a system.",
         },
         {
           n: "5",
           title: "Marketing & Lead Engine",
-          body: "Content, campaigns and lead capture that run without you pushing them every day.",
+          body: "Campaigns and lead capture that run on their own.",
         },
         {
           n: "6",
           title: "Finance Visibility Dashboard",
-          body: "Cash flow, P&L, weekly numbers — every Monday morning, not every quarter-end.",
+          body: "Cash flow and P&L every Monday — not every quarter.",
         },
       ],
     },
@@ -197,11 +195,11 @@ export const site = {
   ],
 
   whoFor: [
-    "You run a business doing ₹1 Crore+ with a team of 5 to 500.",
-    "You have paying customers and real revenue — but everything still runs through you.",
-    "You've tried tools, vendors or hiring — and the chaos only got louder.",
-    "You're busy every single day but the business isn't growing the way it should.",
-    "You want to work ON your business, not IN it — and you're ready to build the system that makes that real.",
+    "₹1 Crore+ revenue, team of 5–500",
+    "Real revenue — but everything runs through you",
+    "Tried tools and vendors — chaos got louder",
+    "Busy every day, growing slowly",
+    "Ready to work ON the business, not IN it",
   ],
   industries: [
     "Manufacturing",
@@ -222,35 +220,35 @@ export const site = {
   testimonials: [
     {
       headline: "7-day holiday. Zero calls. First time in 4 years.",
-      body: "55 people in my unit. I used to spend 2 hours every morning finding out what happened yesterday. I built the daily reporting system on Day 1. Next morning my floor manager reported to me without being asked. Three weeks later I went to Kerala for 7 days — not one call from the factory.",
+      body: "Built the reporting system on Day 1. Three weeks later I spent 7 days in Kerala — not one call from the factory.",
       name: "Rajan Deshmukh",
       meta: "Auto Parts, Coimbatore · Team of 55",
     },
     {
       headline: "₹8 lakhs of failed IT work — solved in 2 days for ₹51.",
-      body: "Three different Google Sheets that never matched. I paid ₹8 lakhs to an IT vendor who delivered 60% and vanished. This workshop gave me what they couldn't — a working system that has run for 4 months without breaking.",
+      body: "An IT vendor took ₹8 lakhs and vanished. This gave me a working system that has run 4 months without breaking.",
       name: "Hitesh Shah",
       meta: "Distribution, Surat · Team of 22",
     },
     {
       headline: "My team coordination time dropped 60%.",
-      body: "Billing ₹1.2 Cr and I couldn't take 3 days off without clients calling me directly. I built the ops and client reporting system on Day 2. Took a 4-day trip two weeks later. Zero fires. The business ran exactly as designed.",
+      body: "Built the ops system on Day 2. Took a 4-day trip two weeks later — zero fires.",
       name: "Sonali Joshi",
       meta: "Digital Agency, Bangalore · Team of 14",
     },
     {
       headline: "I finally feel like an owner — not an employee of my own company.",
-      body: "5 retail outlets. I was driving between stores every evening, home after 10 PM daily. After the workshop, all 5 managers report into one dashboard by 7 PM. I'm home for dinner now. My wife asked what changed. I said — I finally built a system.",
+      body: "All 5 store managers now report into one dashboard by 7 PM. I'm home for dinner now.",
       name: "Venkat Reddy",
       meta: "Retail Chain, Hyderabad · Team of 38",
     },
   ],
 
   bonuses: [
-    { name: "The 6-System Blueprint Pack", body: "Ready-to-use templates for all six systems you build in the workshop.", value: 6000 },
-    { name: "Live Q&A Access", body: "Get your specific business questions answered live, in the room — attendees only.", value: 4000 },
-    { name: "The AI Prompt Library", body: "The exact prompts that build each system — copy-paste ready.", value: 3000 },
-    { name: "The SOP Starter Kit", body: "Done-for-you procedure templates your team will actually follow.", value: 2000 },
+    { name: "The 6-System Blueprint Pack", body: "Templates for all six systems you build.", value: 6000, image: "/bonus-blueprints.jpg" },
+    { name: "Live Q&A Access", body: "Your questions, answered live in the room.", value: 4000, image: "/bonus-qna.jpg" },
+    { name: "The AI Prompt Library", body: "The exact prompts — copy-paste ready.", value: 3000, image: "/bonus-prompts.jpg" },
+    { name: "The SOP Starter Kit", body: "Procedures your team will actually follow.", value: 2000, image: "/bonus-sop.jpg" },
   ],
 
   registerIf: [

@@ -45,7 +45,7 @@ export function Mentor() {
 
         <div className="text-center md:text-left">
           <Reveal delay={80}>
-            <p className="font-display text-[1.6rem] italic leading-snug text-gold sm:text-[1.8rem]">“{m.quote}”</p>
+            <p className="font-accent text-[1.7rem] italic leading-snug text-gold sm:text-[1.9rem]">“{m.quote}”</p>
           </Reveal>
           <Reveal delay={140} className="mt-6 space-y-4 text-[15.5px] leading-relaxed text-cream/70">
             {m.bio.map((p, i) => (

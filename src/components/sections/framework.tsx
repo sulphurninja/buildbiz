@@ -28,7 +28,7 @@ export function Framework() {
       <ol className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {site.framework.map((f, i) => (
           <Reveal as="li" key={f.name} delay={i * 90} className="rounded-3xl border border-line bg-wine-2/70 p-6 text-center">
-            <span className="mx-auto flex size-11 items-center justify-center rounded-full bg-gold font-display text-lg font-bold text-wine-deep">{f.step}</span>
+            <span className="mx-auto flex size-11 items-center justify-center rounded-full bg-gold font-display text-lg font-bold text-paper">{f.step}</span>
             <h3 className="mt-4 font-display text-[1.6rem] font-bold text-cream">{f.name}</h3>
             <p className="mt-2 text-[14.5px] font-semibold leading-snug text-cream/90">{f.headline}</p>
             <p className="mt-2 text-[14px] leading-relaxed text-cream/60">{f.body}</p>

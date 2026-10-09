@@ -38,7 +38,7 @@ export function PurchaseToasts() {
           toast.custom(
             () => (
               <div className="flex w-[340px] max-w-[calc(100vw-2rem)] items-center gap-3 rounded-2xl border border-gold/30 bg-wine-2 p-3 pr-4 shadow-deep">
-                <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-gold font-display text-base font-bold text-wine-deep">
+                <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-gold font-display text-base font-bold text-paper">
                   {buyer.name
                     .split(" ")
                     .map((p) => p[0])

@@ -24,7 +24,7 @@ export function CtaButton({ children, source, size = "lg", tone = "gold", classN
   }[size];
 
   const tones = {
-    gold: "bg-gradient-to-b from-[oklch(0.9_0.09_88)] via-gold to-gold-deep text-wine-deep glow-gold hover:brightness-105",
+    gold: "bg-gradient-to-b from-[oklch(0.72_0.14_75)] via-gold to-gold-deep text-paper glow-gold hover:brightness-105",
     outline: "border border-gold/40 bg-transparent text-cream hover:bg-gold/10",
   }[tone];
 

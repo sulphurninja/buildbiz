@@ -22,14 +22,14 @@ export function SiteHeader() {
 
   return (
     <div className="sticky top-0 z-50">
-      {/* Top bar */}
-      <div className="bg-wine-deep text-cream">
+      {/* Top bar — dark accent band */}
+      <div className="bg-wine-ink text-paper">
         <div className="mx-auto flex h-9 max-w-7xl items-center justify-center gap-3 px-4 text-[12px] font-semibold uppercase tracking-[0.16em]">
-          <span className="hidden text-gold sm:inline">🇮🇳</span>
-          <span className="truncate text-gold">{site.event.kicker}</span>
-          <span className="hidden text-cream/30 md:inline">·</span>
-          <span className="hidden truncate text-cream/70 md:inline">{site.event.audience}</span>
-          <span className="hidden text-gold sm:inline">🇮🇳</span>
+          <span className="hidden text-gold-bright sm:inline">🇮🇳</span>
+          <span className="truncate text-gold-bright">{site.event.kicker}</span>
+          <span className="hidden text-paper/30 md:inline">·</span>
+          <span className="hidden truncate text-paper/70 md:inline">{site.event.audience}</span>
+          <span className="hidden text-gold-bright sm:inline">🇮🇳</span>
         </div>
       </div>
 

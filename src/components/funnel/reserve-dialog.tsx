@@ -86,7 +86,7 @@ export function ReserveDialog({ open, onOpenChange, source }: Props) {
           </div>
           <DialogHeader className="mt-3 space-y-2 text-left">
             <DialogTitle className="font-display text-[2rem] font-bold leading-tight text-cream">
-              2 nights. 6 systems. <em className="italic text-gold">₹{site.event.price}.</em>
+              2 nights. 6 systems. <em className="font-accent italic font-normal text-gold">₹{site.event.price}.</em>
             </DialogTitle>
             <DialogDescription className="text-[15px] text-cream/65">
               {site.event.dateLabel} · {site.event.timeLabel} · Live on {site.event.platform}. Both days included.
@@ -110,7 +110,7 @@ export function ReserveDialog({ open, onOpenChange, source }: Props) {
           <button
             type="submit"
             disabled={submitting}
-            className="group inline-flex h-14 w-full items-center justify-center gap-3 rounded-full bg-gradient-to-b from-[oklch(0.9_0.09_88)] via-gold to-gold-deep text-[15px] font-extrabold uppercase tracking-[0.04em] text-wine-deep glow-gold transition hover:brightness-105 disabled:opacity-70"
+            className="group inline-flex h-14 w-full items-center justify-center gap-3 rounded-full bg-gradient-to-b from-[oklch(0.72_0.14_75)] via-gold to-gold-deep text-[15px] font-extrabold uppercase tracking-[0.04em] text-paper glow-gold transition hover:brightness-105 disabled:opacity-70"
           >
             {submitting ? <Loader2 className="size-5 animate-spin" /> : null}
             <span>{submitting ? "Holding your seat…" : `Pay ₹${site.event.price} & reserve my seat`}</span>
@@ -161,7 +161,7 @@ function ChipGroup({ label, options, value, onChange }: { label: string; options
               aria-pressed={active}
               className={cn(
                 "h-10 rounded-full border px-4 text-[13.5px] font-semibold transition-colors",
-                active ? "border-gold bg-gold text-wine-deep" : "border-line bg-wine-deep/40 text-cream/80 hover:border-gold/50",
+                active ? "border-gold bg-gold text-paper" : "border-line bg-wine-deep/40 text-cream/80 hover:border-gold/50",
               )}
             >
               {o}

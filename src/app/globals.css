@@ -8,7 +8,8 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-display), Georgia, "Times New Roman", serif;
+  --font-display: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  --font-accent: var(--font-accent), Georgia, "Times New Roman", serif;
 
   --color-ring: var(--ring);
   --color-input: var(--input);
@@ -39,6 +40,9 @@
   --color-gold-soft: var(--gold-soft);
   --color-flame: var(--flame);
   --color-mint: var(--mint);
+  --color-wine-ink: var(--wine-ink);
+  --color-paper: var(--paper);
+  --color-gold-bright: var(--gold-bright);
 
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
@@ -102,17 +106,25 @@
 :root {
   --radius: 0.9rem;
 
-  --wine: oklch(0.215 0.058 15);
-  --wine-deep: oklch(0.175 0.05 15);
-  --wine-2: oklch(0.255 0.06 15);
-  --wine-3: oklch(0.31 0.065 15);
-  --line: oklch(1 0 0 / 11%);
-  --cream: oklch(0.965 0.02 82);
-  --gold: oklch(0.84 0.11 86);
-  --gold-deep: oklch(0.73 0.13 78);
-  --gold-soft: oklch(0.84 0.11 86 / 14%);
-  --flame: oklch(0.68 0.2 32);
-  --mint: oklch(0.82 0.13 155);
+  /* Light theme: warm paper surfaces, dark wine ink, amber-gold accent.
+     Token names kept from the dark theme so components stay unchanged:
+     "wine*" = surfaces, "cream" = ink/text. */
+  --wine: oklch(0.985 0.008 85);
+  --wine-deep: oklch(0.961 0.014 82);
+  --wine-2: oklch(1 0 0);
+  --wine-3: oklch(0.93 0.02 80);
+  --line: oklch(0.3 0.05 25 / 11%);
+  --cream: oklch(0.27 0.05 20);
+  --gold: oklch(0.63 0.125 70);
+  --gold-deep: oklch(0.52 0.115 62);
+  --gold-soft: oklch(0.63 0.125 70 / 10%);
+  --flame: oklch(0.55 0.19 30);
+  --mint: oklch(0.52 0.11 155);
+
+  /* Absolute tokens (never flip with the theme) */
+  --wine-ink: oklch(0.27 0.05 20);
+  --paper: oklch(0.985 0.008 85);
+  --gold-bright: oklch(0.82 0.13 82);
 
   --background: var(--wine);
   --foreground: var(--cream);
@@ -141,23 +153,29 @@
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
-    color-scheme: dark;
+    color-scheme: light;
   }
   body {
     @apply bg-background text-foreground font-sans;
     -webkit-font-smoothing: antialiased;
-    background-image: radial-gradient(color-mix(in oklab, var(--cream) 5%, transparent) 1px, transparent 1px);
+    background-image: radial-gradient(color-mix(in oklab, var(--wine-ink) 5%, transparent) 1px, transparent 1px);
     background-size: 26px 26px;
   }
   ::selection {
-    background: color-mix(in oklab, var(--gold) 40%, transparent);
-    color: var(--wine-deep);
+    background: color-mix(in oklab, var(--gold-bright) 55%, transparent);
+    color: var(--wine-ink);
   }
 }
 
 @utility font-display {
   font-family: var(--font-display);
-  letter-spacing: -0.005em;
+  letter-spacing: -0.03em;
+}
+
+@utility font-accent {
+  font-family: var(--font-accent);
+  letter-spacing: -0.01em;
+  font-weight: 400;
 }
 
 @utility eyebrow {
@@ -169,14 +187,14 @@
 
 @utility glow-gold {
   box-shadow:
-    0 0 0 1px color-mix(in oklab, var(--gold) 40%, transparent),
-    0 18px 50px -18px color-mix(in oklab, var(--gold) 55%, transparent);
+    0 0 0 1px color-mix(in oklab, var(--gold) 30%, transparent),
+    0 14px 40px -16px color-mix(in oklab, var(--gold) 45%, transparent);
 }
 
 @utility shadow-deep {
   box-shadow:
-    0 1px 0 color-mix(in oklab, var(--cream) 6%, transparent) inset,
-    0 30px 80px -30px oklch(0 0 0 / 70%);
+    0 1px 2px color-mix(in oklab, var(--wine-ink) 6%, transparent),
+    0 24px 56px -24px color-mix(in oklab, var(--wine-ink) 28%, transparent);
 }
 
 @utility mask-fade-x {
@@ -185,7 +203,7 @@
 
 @utility text-gradient-gold {
   color: var(--gold);
-  background-image: linear-gradient(100deg, var(--gold) 0%, oklch(0.93 0.07 88) 45%, var(--gold-deep) 100%);
+  background-image: linear-gradient(100deg, oklch(0.68 0.14 75) 0%, oklch(0.55 0.13 60) 60%, oklch(0.47 0.11 50) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -26,17 +26,16 @@ export function TechTimeline() {
           >
             <p className={cn("font-display text-[2.6rem] font-bold leading-none", t.now ? "text-gold" : "text-cream/60")}>{t.year}</p>
             <p className="mt-3 eyebrow text-cream/55">{t.tech}</p>
-            <p className={cn("mt-4 font-display text-[1.25rem] italic leading-snug", t.now ? "text-cream" : "text-cream/70")}>{t.quote}</p>
+            <p className={cn("mt-4 font-accent text-[1.35rem] italic leading-snug", t.now ? "text-cream" : "text-cream/70")}>{t.quote}</p>
           </Reveal>
         ))}
       </ol>
 
-      <Reveal className="mx-auto mt-12 max-w-3xl text-center">
-        <p className="text-[16px] leading-relaxed text-cream/70 sm:text-[17px]">
-          Aaj ek business chala ke dikhao — bina computer, bina phone, bina WhatsApp ke. Impossible, na?{" "}
-          <strong className="font-semibold text-cream">AI in 2026 is exactly where WhatsApp was in 2015.</strong> The owners who adopt it early will lead their market for the
-          next decade. Agar aap WhatsApp chala sakte ho, <span className="font-semibold text-gold">toh aap ye system bana sakte ho.</span>
+      <Reveal className="mx-auto mt-12 max-w-2xl text-center">
+        <p className="text-[16px] leading-relaxed text-cream/70">
+          <strong className="font-semibold text-cream">AI in 2026 is where WhatsApp was in 2015.</strong>
         </p>
+        <p className="mt-2 font-accent text-[1.5rem] italic text-gold">Agar aap WhatsApp chala sakte ho, toh aap ye system bana sakte ho.</p>
       </Reveal>
 
       <Reveal className="mt-12">
