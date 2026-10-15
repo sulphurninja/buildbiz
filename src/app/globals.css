@@ -233,6 +233,22 @@
   animation-play-state: paused;
 }
 
+/* ---- /v2 GrowthSchool-style theme ---- */
+.gs-root {
+  font-family: var(--font-gs-body), sans-serif;
+  background: #fdf8ee;
+  color: #16181d;
+  letter-spacing: 0;
+}
+.gs-root ::selection {
+  background: #1e40af;
+  color: #fff;
+}
+.gs-head {
+  font-family: var(--font-gs-head), sans-serif;
+  letter-spacing: -0.015em;
+}
+
 [data-sonner-toast][data-styled="false"] {
   padding: 0;
   background: transparent;
