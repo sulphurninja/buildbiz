@@ -19,7 +19,7 @@ export function GsChecklist() {
             <p className="mt-2 text-sm text-black/50">Be honest. Nobody&apos;s watching.</p>
           </div>
           <Image
-            src="/gs/illo-chaos.jpg"
+            src="/gs/photo-chaos.jpg"
             alt="Business owner juggling calls, chats and fires"
             width={360}
             height={360}

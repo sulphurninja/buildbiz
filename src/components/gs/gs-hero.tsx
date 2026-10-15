@@ -64,7 +64,7 @@ export function GsHero() {
         {/* Right */}
         <div className="flex flex-col items-center gap-7 border-black/10 lg:border-l lg:border-dashed lg:pl-12">
           <Image
-            src="/gs/illo-system.jpg"
+            src="/gs/photo-system.jpg"
             alt="The system runs the business while the owner relaxes"
             width={720}
             height={540}

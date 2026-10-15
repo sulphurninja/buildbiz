@@ -69,7 +69,7 @@ export function GsSchedule() {
             </p>
           </div>
           <Image
-            src="/gs/illo-build.jpg"
+            src="/gs/photo-build.jpg"
             alt="Two founders building their system together at night"
             width={760}
             height={428}
@@ -379,8 +379,8 @@ export function GsWhyCheap() {
           </div>
         </div>
         <Image
-          src="/gs/illo-filter.jpg"
-          alt="A small price that filters for serious builders"
+          src="/gs/photo-serious.jpg"
+          alt="Serious business owners building in a live workshop session"
           width={512}
           height={512}
           className="mx-auto hidden w-full max-w-[280px] rounded-xl border border-black/10 lg:block"
