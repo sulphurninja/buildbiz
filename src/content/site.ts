@@ -223,24 +223,28 @@ export const site = {
       body: "Built the reporting system on Day 1. Three weeks later I spent 7 days in Kerala — not one call from the factory.",
       name: "Rajan Deshmukh",
       meta: "Auto Parts, Coimbatore · Team of 55",
+      image: "/testimonials/rajan.jpg",
     },
     {
       headline: "₹8 lakhs of failed IT work — solved in 2 days for ₹51.",
       body: "An IT vendor took ₹8 lakhs and vanished. This gave me a working system that has run 4 months without breaking.",
       name: "Hitesh Shah",
       meta: "Distribution, Surat · Team of 22",
+      image: "/testimonials/hitesh.jpg",
     },
     {
       headline: "My team coordination time dropped 60%.",
       body: "Built the ops system on Day 2. Took a 4-day trip two weeks later — zero fires.",
       name: "Sonali Joshi",
       meta: "Digital Agency, Bangalore · Team of 14",
+      image: "/testimonials/sonali.jpg",
     },
     {
       headline: "I finally feel like an owner — not an employee of my own company.",
       body: "All 5 store managers now report into one dashboard by 7 PM. I'm home for dinner now.",
       name: "Venkat Reddy",
       meta: "Retail Chain, Hyderabad · Team of 38",
+      image: "/testimonials/venkat.jpg",
     },
   ],
 

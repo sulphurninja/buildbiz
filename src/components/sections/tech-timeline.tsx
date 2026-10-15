@@ -1,7 +1,6 @@
 import { cn } from "cn";
 import { site } from "@/content/site";
 import { Reveal } from "@/components/funnel/reveal";
-import { CtaBlock } from "@/components/funnel/cta-button";
 import { Em, Section, SectionHeading } from "@/components/sections/section-heading";
 
 export function TechTimeline() {
@@ -31,15 +30,8 @@ export function TechTimeline() {
         ))}
       </ol>
 
-      <Reveal className="mx-auto mt-12 max-w-2xl text-center">
-        <p className="text-[16px] leading-relaxed text-cream/70">
-          <strong className="font-semibold text-cream">AI in 2026 is where WhatsApp was in 2015.</strong>
-        </p>
-        <p className="mt-2 font-accent text-[1.5rem] italic text-gold">Agar aap WhatsApp chala sakte ho, toh aap ye system bana sakte ho.</p>
-      </Reveal>
-
-      <Reveal className="mt-12">
-        <CtaBlock source="timeline">Yes! I&apos;m ready to adopt early</CtaBlock>
+      <Reveal className="mx-auto mt-10 max-w-2xl text-center">
+        <p className="font-accent text-[1.5rem] italic text-gold">Agar aap WhatsApp chala sakte ho, toh aap ye system bana sakte ho.</p>
       </Reveal>
     </Section>
   );

@@ -11,7 +11,6 @@ import { FinalCta } from "@/components/sections/final-cta";
 import { Framework } from "@/components/sections/framework";
 import { Gallery } from "@/components/sections/gallery";
 import { Hero } from "@/components/sections/hero";
-import { JobTitles } from "@/components/sections/job-titles";
 import { Mentor } from "@/components/sections/mentor";
 import { PainPoints } from "@/components/sections/pain-points";
 import { Qualify } from "@/components/sections/qualify";
@@ -27,7 +26,6 @@ export default function Page() {
         <Hero />
         <TrustStrip />
         <PainPoints />
-        <JobTitles />
         <TechTimeline />
         <BeforeAfter />
         <Framework />
