@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  async redirects() {
+    return [{ source: "/v2", destination: "/workshop/v2", permanent: false }];
+  },
   cacheComponents: true,
   partialPrefetching: true,
   turbopack: {

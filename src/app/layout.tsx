@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Bricolage_Grotesque, Inter, Instrument_Serif } from "next/font/google";
+import { Bricolage_Grotesque, Inter, Instrument_Serif, JetBrains_Mono, Newsreader } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner";
 import { site } from "@/content/site";
 import "./globals.css";
@@ -24,8 +24,22 @@ const accent = Instrument_Serif({
   style: ["normal", "italic"],
 });
 
-const title = `${site.brand.name} — Steal the Business Operating System India's Smartest Founders Use | Live ₹${site.event.price} Workshop`;
-const description = `Live 2-day workshop (${site.event.dateLabel}, ${site.event.timeLabel}) where you build the AI system that runs your team, sales, operations and follow-ups. No code. No IT team. ₹${site.event.price} + GST, both days included.`;
+const mono = JetBrains_Mono({
+  variable: "--font-mono",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const serif = Newsreader({
+  variable: "--font-serif",
+  subsets: ["latin"],
+  display: "swap",
+  style: ["normal", "italic"],
+});
+
+const title = "BuildBizAI — Industry software you own";
+const description =
+  "Industry software you can open and work. Twenty-three live desks, each built for a different kind of business, with fictional companies and working controls.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.brand.url),
@@ -44,7 +58,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en-IN" className={`${sans.variable} ${display.variable} ${accent.variable} h-full antialiased`}>
+    <html lang="en-IN" data-scroll-behavior="smooth" className={`${sans.variable} ${display.variable} ${accent.variable} ${mono.variable} ${serif.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         {children}
         <Toaster theme="light" position="bottom-left" offset={{ bottom: 96, left: 16 }} mobileOffset={{ bottom: 88, left: 12, right: 12 }} visibleToasts={2} />
