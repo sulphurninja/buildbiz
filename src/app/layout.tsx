@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Bricolage_Grotesque, Inter, Instrument_Serif, JetBrains_Mono, Newsreader } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner";
-import { site } from "@/content/site";
+import { shareImage, siteUrl } from "@/content/site-url";
 import "./globals.css";
 
 const sans = Inter({
@@ -37,17 +37,36 @@ const serif = Newsreader({
   style: ["normal", "italic"],
 });
 
-const title = "BuildBizAI — Industry software you own";
+const title = "BuildBizAI | AI operating systems built for every industry";
 const description =
-  "Industry software you can open and work. Twenty-three live desks, each built for a different kind of business, with fictional companies and working controls.";
+  "Industry-native business software with AI agents on every desk. Run operations, money and people from one live command centre, designed around how your business actually works. Explore 26 live industry dashboards.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(site.brand.url),
-  title,
+  metadataBase: new URL(siteUrl),
+  title: { default: title, template: "%s | BuildBizAI" },
   description,
-  openGraph: { title, description, type: "website", locale: "en_IN", siteName: site.brand.name },
-  twitter: { card: "summary_large_image", title, description },
-  robots: { index: true, follow: true },
+  applicationName: "BuildBizAI",
+  keywords: [
+    "AI business software",
+    "industry software India",
+    "business operating system",
+    "AI agents for business",
+    "ERP for SMEs",
+    "MSME software",
+    "manufacturing dashboard",
+    "distributor software",
+    "restaurant management software",
+    "pharma distribution software",
+    "solar EPC software",
+    "BuildBiz AI",
+  ],
+  authors: [{ name: "BuildBizAI" }],
+  creator: "BuildBizAI",
+  alternates: { canonical: "/" },
+  openGraph: { title, description, url: "/", type: "website", locale: "en_IN", siteName: "BuildBizAI", images: [shareImage] },
+  twitter: { card: "summary_large_image", title, description, images: [shareImage.url] },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large" } },
+  category: "business software",
 };
 
 export const viewport: Viewport = {

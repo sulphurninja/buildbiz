@@ -136,7 +136,7 @@ export function AreaChart({
           ))}
         <div className="pointer-events-none absolute inset-x-0 bottom-0 flex justify-between font-mono text-[10.5px] text-d-mute">
           {labels.map((label, i) => (
-            <span key={`${label}-${i}`} className={cn(i % step !== 0 && i !== n - 1 && "invisible")}>
+            <span key={`${label}-${i}`} className={cn((i === n - 1 ? false : i % step !== 0 || n - 1 - i < step) && "invisible")}>
               {label}
             </span>
           ))}
